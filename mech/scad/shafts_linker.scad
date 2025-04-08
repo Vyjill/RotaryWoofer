@@ -1,11 +1,9 @@
-$fn=80;
-
 module cycy()
 {
     difference()
     {
         cylinder(h = 40, r = 8, center = true);
-        translate(v = [ 0, 0, -19.95 ]) cylinder(h = 40, r = 2.85, center = true);
+        translate(v = [ 0, 0, -19.95 ]) cylinder(h = 40, r = 2.8, center = true);
     }
 }
 module shaft()
@@ -13,7 +11,7 @@ module shaft()
     difference()
     {
         cylinder(h = 50, r = 3.75);
-        translate(v = [ 2.7, -10, -0.1 ]) cube(size = 16);
+        translate(v = [ 2.6, -10, -0.1 ]) cube(size = 16);
     }
 }
 module shaft_linkers()
